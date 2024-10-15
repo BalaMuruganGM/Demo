@@ -7,11 +7,13 @@
 .container{
     width: 100%;
     height:100vh;
+    gap: 5px;
     background-color:black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 20px;
 }
 
 .response-h1{
@@ -21,10 +23,13 @@
 .text-content{
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: -15px;
 }
 .text-content h1, .text-content h2{
     font-size: 56px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:cursive;
     animation: popup 1s linear;    
 }
 
@@ -64,17 +69,20 @@
     }
     }
 
-    @media screen and (max-width:650px) {
-        .imgbox img{
-            height: 350px;
-            width: 300px;
-        }
-    .container{
-        justify-content: unset;
-        padding-top:60px;
-        gap: 30px;
+    @media screen and (max-width:650px){
 
-    }
+        .container{
+            justify-content: unset;
+            padding-top:60px;
+            gap: 20px;
+            height: unset;
+    
+        }
+        .imgbox img{
+            height: 370px;
+            width: 320px;
+        }
+   
         
         .text-content h1, .text-content h2{
             font-size: 35px;
@@ -84,23 +92,21 @@
 
 @media screen and (max-width:500px) {
     .imgbox img{
-        height: 330px;
-        width: 280px;
+        height: 350px;
+        width: 300px;
     }
 .container{
-    justify-content: unset;
-    padding-top:50px;
-    gap: 20px;
+    min-height: 100vh;
+    gap: -20px;
+    justify-content: space-between;
+    /* padding-top:50px; */
+   
 
 }
     
     .text-content h1, .text-content h2{
-        font-size: 30px;
-        display: none;
-    }
-    .text-content .response-h1{
-        display: flex;
-    }
+        /* display: none; */
+    }    
 
 
 
