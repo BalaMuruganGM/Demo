@@ -99,14 +99,14 @@
     min-height: 100vh;
     gap: -20px;
     justify-content: space-between;
+    font-family:cursive;
+
     /* padding-top:50px; */
    
 
 }
     
-    .text-content h1, .text-content h2{
-        /* display: none; */
-    }    
+     
 
 
 
